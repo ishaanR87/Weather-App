@@ -12,6 +12,7 @@ body {
 
 .card {
     background: black;
+    opacity: 0.8;
     color: white;
     padding: 2em;
     border-radius: 30px;
