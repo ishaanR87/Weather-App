@@ -19,8 +19,6 @@ body {
     margin: 1em;
 }
 
-
-
 .search {
     display: flex;
     align-items: center;
@@ -33,4 +31,20 @@ button {
     border: none;
     height: 2.5em;
     width: 2.5em;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+}
+
+button:hover {
+    background: #7c7c7c6b;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: .5em 1em;
+    border-radius: 24spx;
+    background: #7c7c7c2b;
+    color: white;
 }
