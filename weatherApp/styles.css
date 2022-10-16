@@ -10,6 +10,15 @@ body {
     font-size: medium;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    margin-left: 5px;
+}
+
 .card {
     background: black;
     opacity: 0.8;
