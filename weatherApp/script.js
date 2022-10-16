@@ -6,6 +6,7 @@ let weather = {
             + city  
             + "&appid=" 
             + this.apiKey
+            + "&units=metric"
         )
             .then((response) => response.json())
             .then((data) => this.displayWeather(data));
@@ -22,6 +23,25 @@ let weather = {
         document.querySelector(".temp").innerText = temp + "°C";
         document.querySelector(".humidity").innerText = "Humidity: " + humidity;
         document.querySelector(".wind").innerText = "Wind Speed: " + speed;
-    }
+        document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')"
+    },  
+    search: function () {
+        this.fetchWeather(document.querySelector(".search-bar").value);
+    }    
 };
     
+
+document.querySelector(".search button")
+.addEventListener("click", function (){
+    weather.search();
+});
+
+document.querySelector(".search-bar")
+.addEventListener("keyup", function (event) {
+    if (event.key == "Enter") {
+        weather.search();
+    }
+});    
+
+
+

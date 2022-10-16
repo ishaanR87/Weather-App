@@ -17,6 +17,7 @@ body {
 
 .description {
     margin-left: 5px;
+    text-transform: capitalize;
 }
 
 .card {
@@ -65,3 +66,4 @@ input.search-bar {
     width: calc(100% - 200px);
     font-size: 110%;
 }
+
